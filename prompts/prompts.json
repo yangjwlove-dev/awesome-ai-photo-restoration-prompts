@@ -1,0 +1,258 @@
+{
+  "version": "1.0.0",
+  "count": 36,
+  "prompts": [
+    {
+      "id": "old-photo-archival-repair",
+      "category": "old-photo-restoration",
+      "title": "Archival Damage Repair (Preserve Sepia / B&W Tone)",
+      "bestFor": "Scratched, creased, dust-spotted family photos where you want original monochrome or sepia tone preserved.",
+      "prompt": "Restore this damaged vintage photograph while preserving 100% of every person's exact facial identity, bone structure, expression, hair pattern, and clothing details.\n\nRepair scope:\n- Cleanly remove physical scratches, white dust specks, fold creases, minor paper tears, and foxing spots.\n- Recover faded mid-tone contrast and shadow detail gently without crushing blacks or blowing out highlights.\n- Preserve authentic photographic grain and realistic skin texture.\n\nStrict constraints:\n- Keep the exact original sepia/monochrome tonal character—do NOT colorize.\n- Do NOT smooth skin into a waxy/airbrushed texture or erase natural wrinkles, glasses, or age markers.\n- Do NOT invent new background objects or alter clothing shapes."
+    },
+    {
+      "id": "old-photo-heavy-crease-pass1",
+      "category": "old-photo-restoration",
+      "title": "Two-Pass Heavy Tear & Fold Reconstruction (Pass 1: Structure Only)",
+      "bestFor": "Severely folded, cracked, or water-stained photos prior to upscaling or colorizing.",
+      "prompt": "Perform a conservative structural restoration on this heavily creased and water-stained vintage photograph.\n\nPriority tasks:\n- Seamlessly mend deep fold lines, missing emulsion cracks, and water-ring discoloration across both foreground subjects and background.\n- Reconstruct missing edges using surrounding cloth weave, paper grain, and lighting direction.\n- Balance uneven yellowing across the print while keeping natural vintage contrast.\n\nStrict constraints:\n- Prioritize anatomical and identity accuracy over sharpness—do NOT over-sharpen or beautify faces.\n- Preserve original monochrome tones, original framing, and background geometry.\n- Keep natural silver-halide film grain uniform across repaired and original areas."
+    },
+    {
+      "id": "old-photo-group-family",
+      "category": "old-photo-restoration",
+      "title": "Multi-Person Vintage Group Portrait Restoration",
+      "bestFor": "Family reunions, wedding photos, and school class pictures with 3+ small faces.",
+      "prompt": "Restore this vintage group photograph with consistent sharpness and identity fidelity across EVERY person in the frame—including faces in the back row.\n\nRepair scope:\n- Remove print scratches, blotches, fading, and lens softness across the full frame.\n- Restore subtle clarity to eyes, eyeglasses, hairlines, and collar details equally for all subjects without over-enhancing only the center faces.\n- Maintain balanced vintage contrast and realistic analog film grain.\n\nStrict constraints:\n- Do NOT merge, drop, add, or swap any person's face, pose, or gaze direction.\n- Avoid synthetic hyper-sharp faces floating on blurry bodies—keep sharpness optically consistent across the depth plane.\n- Preserve the original B&W or vintage color palette without modernizing the look."
+    },
+    {
+      "id": "old-photo-faded-1970s-color",
+      "category": "old-photo-restoration",
+      "title": "Faded 1970s–1990s Color Print Recovery (Magenta/Yellow Cast Fix)",
+      "bestFor": "Old Kodak/Fujifilm prints that turned reddish-magenta, orange, or washed-out yellow.",
+      "prompt": "Restore this faded vintage color print by correcting dye-shift discoloration while preserving authentic analog film character and exact subject identity.\n\nColor & tone repair:\n- Neutralize heavy magenta, yellow, or cyan color casts caused by chemical print aging.\n- Restore realistic natural skin undertones, neutral whites, and true shadows without making the photo look like a modern HDR smartphone shot.\n- Clean up dust specks, scanner streaks, and paper surface scratches.\n\nStrict constraints:\n- Preserve original facial features, expressions, clothing patterns, and period atmosphere.\n- Keep organic color film grain and subtle lens softness in out-of-focus areas.\n- Do NOT oversaturate colors or apply aggressive clarity halos."
+    },
+    {
+      "id": "old-photo-album-glare",
+      "category": "old-photo-restoration",
+      "title": "Remove Glossy Photo Glare & Plastic Sleeve Reflections",
+      "bestFor": "Photos photographed with a phone through glass frames or glossy photo album sleeves.",
+      "prompt": "Remove the harsh light glare, glossy reflection patches, and uneven smartphone-capture shadows from this photographed print while restoring crisp original image detail.\n\nRepair scope:\n- Eliminate blown-out reflection streaks and hazy glare veils across faces and clothing, reconstructing underlying tones faithfully.\n- Correct mild perspective skew and uneven illumination across the print surface.\n- Preserve authentic print texture, exact facial identities, and original color/monochrome palette.\n\nStrict constraints:\n- Do NOT invent new facial details where subtle contrast already exists; recover from surrounding tonal cues.\n- Do NOT crop out subjects or add artificial modern studio lighting."
+    },
+    {
+      "id": "old-photo-silvering-daguerreotype",
+      "category": "old-photo-restoration",
+      "title": "19th-Century Cabinet Card / Daguerreotype Oxidation Repair",
+      "bestFor": "Pre-1920 studio portraits with metallic silvering, heavy tarnish, and vignette damage.",
+      "prompt": "Restore this 19th-century archival studio portrait affected by silvering oxidation, edge tarnish, and surface abrasions.\n\nRepair scope:\n- Remove metallic haze, tarnish spots, and fine surface scratches while recovering delicate tonal gradations in dark Victorian fabrics and facial features.\n- Keep the authentic period tonal range (warm albumen/sepia or cool silver-gelatin) and original studio vignette framing.\n\nStrict constraints:\n- Do NOT colorize or modernize facial features, grooming, or posture.\n- Preserve genuine archival texture and period lens falloff."
+    },
+    {
+      "id": "deblur-portrait-soft-focus",
+      "category": "deblur-and-sharpen",
+      "title": "Soft-Focus Portrait Optical Clarity Recovery",
+      "bestFor": "Portraits where the camera missed focus slightly on the eyes or face.",
+      "prompt": "Recover optical sharpness and natural micro-detail in this slightly out-of-focus portrait while keeping the subject's exact facial identity, skin tone, and lighting unchanged.\n\nFocus priorities:\n- Restore crisp eyelashes, iris catchlights, eyebrows, lip edges, and individual hair strands.\n- Clean up subtle JPEG artifacts and sensor noise while preserving authentic skin pores.\n- Keep background bokeh naturally blurred so the lens depth of field remains realistic.\n\nConstraints:\n- Do NOT alter gaze direction, expression, facial proportions, or color grading.\n- Avoid synthetic HDR halos, oversharpened dark outlines, or airbrushed skin."
+    },
+    {
+      "id": "deblur-motion-handheld",
+      "category": "deblur-and-sharpen",
+      "title": "Camera Shake & Handheld Motion Blur Removal",
+      "bestFor": "Indoor, night, or candid shots blurred by slow shutter speed and directional camera shake.",
+      "prompt": "Remove directional camera-shake motion blur from this handheld photograph and restore clean, natural edges across both foreground subjects and architectural lines.\n\nRepair priorities:\n- Deconvolve directional ghosting around eyes, hands, hairlines, and high-contrast edges.\n- Recover crisp clothing seams, jewelry, and background edges without creating double-edge ringing artifacts.\n- Keep natural indoor/night ambient lighting and authentic shadow noise balance.\n\nConstraints:\n- Preserve exact subject pose, facial identity, and candid moment—do NOT freeze-pose or re-compose the scene.\n- Do NOT brighten night scenes into daytime exposure."
+    },
+    {
+      "id": "deblur-low-light-iso-noise",
+      "category": "deblur-and-sharpen",
+      "title": "Low-Light High-ISO Noise Cleanup + Detail Recovery",
+      "bestFor": "Grainy concert, restaurant, or evening phone photos plagued by color blotches and muddiness.",
+      "prompt": "Clean up heavy high-ISO chroma noise and muddy low-light softness in this photograph while preserving natural edge detail and authentic night lighting atmosphere.\n\nRepair priorities:\n- Remove purple/green color blotches in shadow regions without turning hair or dark fabrics into flat smeared patches.\n- Recover realistic eye clarity, skin texture, and specular light highlights.\n- Maintain warm/cool practical light sources and natural shadow depth.\n\nConstraints:\n- Do NOT apply heavy beauty-filter skin smoothing or artificial daytime white balance.\n- Preserve fine natural luminance grain so the photo retains photographic realism."
+    },
+    {
+      "id": "deblur-messenger-compressed",
+      "category": "deblur-and-sharpen",
+      "title": "WhatsApp / WeChat / Social Thumbnail Compression Cleanup",
+      "bestFor": "Heavily re-compressed chat photos suffering from 8x8 JPEG blocking, mosquito noise, and low resolution.",
+      "prompt": "Remove severe JPEG compression blocks, color banding, and mosquito artifacts around edges in this low-resolution shared photo, restoring clean natural sharpness.\n\nRepair priorities:\n- Eliminate blocky artifacts on faces, gradients, skies, and text edges.\n- Reconstruct fine hair strands, natural skin texture, and crisp clothing patterns faithfully.\n- Keep original composition, colors, and subject identities 100% unchanged.\n\nConstraints:\n- Do NOT invent new accessories, change facial expressions, or hallucinate unreadable background text."
+    },
+    {
+      "id": "deblur-action-pets-kids",
+      "category": "deblur-and-sharpen",
+      "title": "Moving Subject Deblur (Kids, Pets & Sports)",
+      "bestFor": "Candid shots of running children, dogs/cats, or sports moments with subject movement blur.",
+      "prompt": "Sharpen the moving subject in this candid action photo by reducing motion blur on the face, eyes, fur/hair, and clothing while maintaining a natural sense of real-camera motion.\n\nRepair priorities:\n- Restore clear focus on eyes, facial expression, and fine fur or hair detail.\n- Eliminate smeared edges on moving hands/limbs without distorting anatomy or finger count.\n- Keep background lighting, motion context, and natural colors intact.\n\nConstraints:\n- Do NOT alter anatomy, hand gestures, pet markings, or subject identity."
+    },
+    {
+      "id": "deblur-landscape-haze",
+      "category": "deblur-and-sharpen",
+      "title": "Landscape Atmospheric Haze & Soft Lens Sharpening",
+      "bestFor": "Travel photos shot through airplane windows, humid haze, or soft kit zoom lenses.",
+      "prompt": "Enhance optical micro-contrast and fine natural detail in this soft landscape photograph while keeping realistic atmospheric depth and true-to-life colors.\n\nRepair priorities:\n- Reduce hazy veil contrast loss and lens softness across foliage, rock faces, water ripples, and distant architecture.\n- Restore crisp natural textures without crunchy over-sharpening halos along mountain ridges or skylines.\n\nConstraints:\n- Preserve natural aerial perspective (distant mountains should remain slightly softer than foreground).\n- Do NOT add fake clouds, alter sky colors unnaturally, or apply garish HDR tone-mapping."
+    },
+    {
+      "id": "upscale-4k-natural-portrait",
+      "category": "4k-upscaling-texture",
+      "title": "4K Print-Ready Portrait Upscale (Anti-Plastic Skin)",
+      "bestFor": "Upscaling a small portrait for framing, printing at 300 DPI, or large 4K displays.",
+      "prompt": "Upscale this portrait to crisp 4K print-ready resolution while strictly preserving the subject's exact facial identity, proportions, lighting, and natural skin texture.\n\nDetail reconstruction:\n- Reconstruct realistic microscopic skin pores, natural peach fuzz, individual eyelashes, eyebrows, and fine hair strands.\n- Add crisp fabric weave, stitching, and knit texture to clothing consistent with the original garments.\n- Maintain authentic photographic tonal roll-off and subtle organic film/sensor grain.\n\nStrict constraints:\n- Zero plastic skin smoothing, zero AI face beautification, zero age reduction.\n- Do NOT change eye color, teeth alignment, jewelry design, or background objects."
+    },
+    {
+      "id": "upscale-4k-architecture-real-estate",
+      "category": "4k-upscaling-texture",
+      "title": "4K Architectural & Interior Design Upscale",
+      "bestFor": "Real estate listings, architectural photography, and interior portfolios needing sharp straight lines.",
+      "prompt": "Upscale this architectural/interior photograph to clean 4K resolution with crisp geometric precision and realistic material textures.\n\nDetail priorities:\n- Sharpen straight architectural edges, window mullions, brick/stone mortar, wood grain, brushed metal, and woven upholstery.\n- Clean up compression noise in painted walls and glass reflections while keeping reflections physically accurate.\n\nConstraints:\n- Do NOT warp straight vertical/horizontal lines, invent extra furniture, or alter brand logos/artwork on walls."
+    },
+    {
+      "id": "upscale-4k-digital-art-illustration",
+      "category": "4k-upscaling-texture",
+      "title": "4K Illustration, Anime & Line-Art Upscale",
+      "bestFor": "Digital paintings, anime stills, concept art, and cel-shaded artwork without introducing photographic noise.",
+      "prompt": "Upscale this illustration to crisp 4K resolution while faithfully preserving the original artist's brushwork, line weight, shading style, and exact color palette.\n\nDetail priorities:\n- Reconstruct clean, anti-aliased ink lines and smooth cel/painterly gradients without JPEG ringing or stair-stepping.\n- Preserve intentional paper/canvas grain or flat anime fills according to the source art style.\n\nConstraints:\n- Do NOT convert illustrated characters into photorealistic faces.\n- Do NOT alter character designs, eyes, signature watermarks, or color harmony."
+    },
+    {
+      "id": "upscale-4k-old-movie-still",
+      "category": "4k-upscaling-texture",
+      "title": "Cinematic Film Still 4K Remaster",
+      "bestFor": "Low-res DVD/VHS captures and vintage cinema stills needing 35mm-style 4K remastering.",
+      "prompt": "Remaster and upscale this low-resolution film still to clean 4K cinema quality while honoring authentic 35mm film optics and color timing.\n\nDetail priorities:\n- Remove VHS/DVD interlacing lines, macroblocking, and chroma smear.\n- Recover crisp actor facial fidelity, period costume weave, and set textures with subtle, genuine 35mm film grain.\n\nConstraints:\n- Preserve exact cinema color grading, aspect ratio framing, and actor likenesses.\n- Avoid modern digital-video sharpness or sterile noise-free plastic look."
+    },
+    {
+      "id": "upscale-4k-macro-nature",
+      "category": "4k-upscaling-texture",
+      "title": "4K Wildlife, Botanical & Macro Texture Upscale",
+      "bestFor": "Cropped wildlife shots, bird photography, and macro flower/insect images.",
+      "prompt": "Upscale this nature photograph to ultra-crisp 4K detail while maintaining natural optical bokeh and biologically accurate textures.\n\nDetail priorities:\n- Reconstruct individual feather barbs, animal fur fibers, leaf veins, and dewdrop specular highlights faithfully.\n- Keep smooth, creamy lens background blur free from digital noise amplification.\n\nConstraints:\n- Do NOT hallucinate unnatural scales/patterns or distort animal eyes and anatomy."
+    },
+    {
+      "id": "upscale-4k-ui-design-mockup",
+      "category": "4k-upscaling-texture",
+      "title": "Crisp Retina 4K UI / Logo / Diagram Upscale",
+      "bestFor": "Blurry presentation slides, software screenshots, logos, and infographics.",
+      "prompt": "Upscale this graphic/UI image to razor-sharp Retina resolution with clean vector-like edges, flat solid colors, and crystal-clear typography.\n\nDetail priorities:\n- Eliminate JPEG mosquito noise around icons, buttons, borders, and text.\n- Preserve exact brand colors, icon geometry, and every character of text without distortion.\n\nConstraints:\n- Do NOT rewrite labels, invent new UI buttons, or add photorealistic shading to flat vector elements."
+    },
+    {
+      "id": "colorize-family-portrait-natural",
+      "category": "bw-colorization",
+      "title": "Natural Family Portrait Colorization (Realistic Skin Undertones)",
+      "bestFor": "1930s–1980s B&W family portraits where natural, understated realism matters most.",
+      "prompt": "Colorize this black-and-white family photograph with lifelike, understated natural colors while keeping every facial feature, shadow, and texture identical to the original image.\n\nColor direction:\n- Render realistic multi-tone human skin with subtle warm highlights, gentle rosy cheeks/ears, and slightly cooler shadow transitions—never flat monochrome peach.\n- Choose muted, era-authentic colors for clothing, knitwear, wood furniture, and outdoor greenery consistent with classic Kodachrome/Ektachrome film.\n- Keep original luminance contrast and natural silver film grain intact.\n\nStrict constraints:\n- Do NOT alter facial geometry, eye direction, expressions, or hairstyles.\n- Zero oversaturated neon hues, zero color bleeding past clothing edges."
+    },
+    {
+      "id": "colorize-1920s-1940s-street",
+      "category": "bw-colorization",
+      "title": "1920s–1940s Historical Street & Architecture Colorization",
+      "bestFor": "Archival cityscapes, vintage cars, storefronts, and historical documentary photos.",
+      "prompt": "Colorize this historical black-and-white street photograph with period-accurate 1920s–1940s muted pigments and realistic atmospheric lighting.\n\nColor direction:\n- Historically accurate dark enamels for vintage automobiles (black, navy, forest green, maroon), weathered brick/limestone facades, worn asphalt, and subdued wool coats/hats.\n- Natural overcast or golden-hour sky tone matching the original shadow hardness and sun angle.\n- Subtle patina and weathering on metal signs, wood trim, and pavement.\n\nStrict constraints:\n- Do NOT modernize storefronts, invent contemporary signage colors, or alter historic text/numbers.\n- Maintain authentic documentary contrast and analog film texture."
+    },
+    {
+      "id": "colorize-wedding-vintage",
+      "category": "bw-colorization",
+      "title": "Vintage Wedding Portrait Colorization (Lace & Warm Florals)",
+      "bestFor": "Grandparents' B&W wedding portraits with delicate white lace, tuxedos, and bouquets.",
+      "prompt": "Colorize this vintage black-and-white wedding photograph with delicate, timeless film colors while keeping 100% of the couple's exact facial identities and dress textures.\n\nColor direction:\n- Natural ivory/off-white wedding gown preserving intricate lace shadows (not stark digital cyan-white), charcoal/black wool tuxedo, soft botanical greens and pastel florals in the bouquet.\n- Warm, lifelike skin tones with subtle tonal depth and natural eye colors.\n\nStrict constraints:\n- Do NOT alter faces, veil patterns, lace geometry, or background architectural details.\n- Avoid overly rosy/saturated Instagram-style filters."
+    },
+    {
+      "id": "colorize-military-uniform-archival",
+      "category": "bw-colorization",
+      "title": "Archival Military & Uniform Portrait Colorization",
+      "bestFor": "Mid-20th-century service portraits needing restrained olive/khaki/navy uniform accuracy.",
+      "prompt": "Colorize this archival black-and-white uniformed portrait with historically restrained, realistic textile and brass tones.\n\nColor direction:\n- Authentic matte wool/cotton uniform colors (muted olive drab, khaki, or deep navy appropriate to the uniform cut and monochrome tone value), subtle tarnished brass buttons/insignia, and natural leather straps.\n- Realistic, understated human skin tones and classic neutral studio backdrop.\n\nStrict constraints:\n- Do NOT invent new medals, alter insignia shapes, or modify facial identity and posture."
+    },
+    {
+      "id": "colorize-custom-palette-guided",
+      "category": "bw-colorization",
+      "title": "User-Guided Palette Colorization Template (Fill-in-the-Blanks)",
+      "bestFor": "When family members remember exact hair, eye, dress, or car colors.",
+      "prompt": "Colorize this black-and-white photograph faithfully using the specific verified color cues below while keeping every facial feature, shadow, and grain texture unchanged.\n\nVerified color cues (replace brackets before running):\n- Subject hair & eyes: [e.g., chestnut brown hair, hazel eyes]\n- Main garment: [e.g., deep burgundy wool cardigan over cream blouse]\n- Key prop / vehicle: [e.g., pale sage-green 1957 sedan]\n- Environment / season: [e.g., late autumn afternoon, muted golden foliage, soft overcast sky]\n\nStrict constraints:\n- Keep all unspecified elements in restrained, period-authentic natural colors.\n- Do NOT alter facial geometry, expressions, or original luminance contrast."
+    },
+    {
+      "id": "colorize-restore-then-color",
+      "category": "bw-colorization",
+      "title": "Combined Gentle Scratch Cleanup + Subtle Colorization",
+      "bestFor": "Moderately scratched B&W prints where you want a clean single-pass natural color version.",
+      "prompt": "First repair visible dust specks, fine surface scratches, and tonal fading in this black-and-white photograph, then apply understated, historically realistic natural colorization.\n\nPriorities:\n- Preserve 100% of every person's exact facial likeness, age markers, and gaze.\n- Apply lifelike multi-tone skin colors and muted mid-century film hues for clothing and surroundings.\n- Retain subtle organic film grain across repaired and colorized regions.\n\nConstraints:\n- Do NOT beautify or smooth skin, invent background objects, or push color saturation beyond authentic analog film."
+    },
+    {
+      "id": "ecom-product-clarity-label",
+      "category": "ecommerce-and-portraits",
+      "title": "E-Commerce Product Photo Clarity & Crisp Packaging Labels",
+      "bestFor": "Amazon, Shopify, Etsy, and marketplace listings with soft smartphone shots or compressed supplier photos.",
+      "prompt": "Enhance this product photograph to crisp, commercial e-commerce clarity while keeping the exact product geometry, brand colors, and every letter on the packaging label 100% faithful.\n\nEnhancement priorities:\n- Remove JPEG artifacts, sensor noise, and slight lens softness across packaging, glass, metal, or fabric textures.\n- Balance studio exposure and clean white/neutral backdrop uniformity without blowing out subtle product shadows.\n- Keep all printed brand logos, ingredient text, and SKU typography sharp and unaltered.\n\nStrict constraints:\n- Do NOT invent new label text, alter brand spelling, change product proportions, or add props."
+    },
+    {
+      "id": "ecom-apparel-fabric-detail",
+      "category": "ecommerce-and-portraits",
+      "title": "Apparel & Footwear Texture Enhancement",
+      "bestFor": "Fashion listings needing realistic knit, denim, leather grain, and accurate true-to-life color.",
+      "prompt": "Sharpen and clean up this apparel/footwear product photograph so customers can clearly see real stitching, fabric weave, leather grain, and hardware details.\n\nEnhancement priorities:\n- Recover fine micro-texture in cotton, wool, suede, leather, and seams without harsh digital sharpening halos.\n- Preserve exact garment color accuracy (critical to prevent customer returns).\n\nStrict constraints:\n- Do NOT alter garment fit, wrinkles that show drape, brand tags, or true hue."
+    },
+    {
+      "id": "ecom-jewelry-metal-clean",
+      "category": "ecommerce-and-portraits",
+      "title": "Jewelry & Watch Macro Specular Cleanup",
+      "bestFor": "Rings, necklaces, and watches suffering from dust specks, micro-blur, or dull reflections.",
+      "prompt": "Enhance this macro jewelry/watch photograph for sharp commercial presentation while preserving exact stone facets, engravings, and dial markings.\n\nEnhancement priorities:\n- Remove stray lint, dust specks, and minor compression softness.\n- Restore crisp metallic specular highlights and clean gemstone facet edges without fake starburst flares.\n\nStrict constraints:\n- Keep dial numbers, brand logos, hallmarked engravings, and stone proportions 100% accurate."
+    },
+    {
+      "id": "portrait-linkedin-headshot-clean",
+      "category": "ecommerce-and-portraits",
+      "title": "Natural Professional Headshot Clarity (Zero AI Glamour)",
+      "bestFor": "LinkedIn, speaker bios, and company team pages taken in imperfect office lighting.",
+      "prompt": "Enhance this professional headshot for crisp focus, clean white balance, and natural office/studio lighting while preserving 100% of the person's authentic appearance.\n\nEnhancement priorities:\n- Sharpen eyes, glasses frames, hair strands, and blazer/shirt fabric naturally.\n- Gently balance harsh overhead shadows and uneven skin lighting while preserving real pores, natural wrinkles, and authentic skin tone.\n- Clean up minor background sensor noise while keeping natural background blur.\n\nStrict constraints:\n- Do NOT change facial structure, hair style, clothing, or apply heavy airbrushing."
+    },
+    {
+      "id": "ecom-food-photography-crisp",
+      "category": "ecommerce-and-portraits",
+      "title": "Menu & Food Delivery Photo Clarity Boost",
+      "bestFor": "Restaurant menus, DoorDash/UberEats photos, and recipe blogs shot in dim dining rooms.",
+      "prompt": "Enhance the sharpness, appetizing natural color balance, and lighting clarity of this food photograph without making it look synthetic or over-processed.\n\nEnhancement priorities:\n- Neutralize muddy yellow/green indoor lighting casts so ingredients look fresh and true to life.\n- Sharpen appetizing surface textures (crust, herbs, glaze highlights, ceramics) and reduce dim-room ISO noise.\n\nStrict constraints:\n- Do NOT add new garnishes, alter portion size, or apply unnatural neon saturation."
+    },
+    {
+      "id": "portrait-glass-glare-fix",
+      "category": "ecommerce-and-portraits",
+      "title": "Reduce Eyeglass Lens Reflection & Recover Eyes",
+      "bestFor": "Portraits where screen glare or camera flash partially obscures eyes behind glasses.",
+      "prompt": "Gently reduce harsh white/green glare reflections on the eyeglass lenses in this portrait to improve eye visibility while preserving the subject's exact eyes, lens frames, and natural lighting.\n\nStrict constraints:\n- Keep subtle realistic glass reflections so the lenses still look genuine—do NOT delete the glasses.\n- Preserve exact eye color, gaze direction, eyelid shape, and frame geometry."
+    },
+    {
+      "id": "doc-general-ocr-prep",
+      "category": "text-and-documents",
+      "title": "Blurry Document & Screenshot OCR Legibility Recovery",
+      "bestFor": "Blurry phone photos of contracts, lecture slides, whiteboards, or low-res web screenshots.",
+      "prompt": "Enhance the legibility and stroke sharpness of this blurry document/screenshot without changing, rewriting, or inventing a single letter, number, or symbol.\n\nRepair priorities:\n- Remove JPEG compression ringing, faint shadow gradients, and minor out-of-focus softness.\n- Increase crisp local contrast between ink/text and the page background while keeping clean character outlines.\n\nStrict constraints:\n- If any character is genuinely ambiguous, keep faithful to the original ink strokes rather than guessing a different letter.\n- Do NOT re-typeset, translate, summarize, or alter table/column layout."
+    },
+    {
+      "id": "doc-vintage-handwriting-letter",
+      "category": "text-and-documents",
+      "title": "Archival Handwritten Letter & Postcard Enhancement",
+      "bestFor": "Faded cursive letters, family diaries, and genealogy certificates on yellowed paper.",
+      "prompt": "Improve ink legibility on this faded archival handwritten document while preserving authentic paper character and exact cursive penmanship strokes.\n\nRepair priorities:\n- Separate faint faded ink from paper yellowing, foxing stains, and subtle bleed-through from the reverse side.\n- Gently sharpen cursive pen strokes without breaking thin loops or turning handwriting into printed font.\n\nStrict constraints:\n- Do NOT alter spelling, overwrite uncertain cursive letters with modern fonts, or erase stamps/postmarks."
+    },
+    {
+      "id": "doc-whiteboard-lecture-slide",
+      "category": "text-and-documents",
+      "title": "Whiteboard & Conference Slide Glare/Blur Cleanup",
+      "bestFor": "Photos snapped from the back of a conference room or classroom.",
+      "prompt": "Clean up glare, uneven projector lighting, and mild zoom blur in this whiteboard/presentation slide photograph so every diagram line and text label is crisp and readable.\n\nRepair priorities:\n- Even out projector hot-spots and dim corners while preserving exact chart colors, arrows, and formulas.\n- Clean up marker faintness on whiteboards without altering equations or spelling.\n\nStrict constraints:\n- Do NOT rewrite formulas, invent numbers, or rearrange diagram boxes."
+    },
+    {
+      "id": "doc-receipt-invoice-flatten",
+      "category": "text-and-documents",
+      "title": "Faded Thermal Receipt & Invoice Contrast Recovery",
+      "bestFor": "Expense reporting when thermal paper print has faded or creased.",
+      "prompt": "Recover maximum legibility on this faded receipt/invoice image by boosting dark-ink contrast against the paper background and cleaning up uneven phone shadows.\n\nStrict constraints:\n- Keep every digit, decimal point, date, and merchant character strictly faithful to the source image.\n- Never guess or fabricate illegible digits."
+    },
+    {
+      "id": "doc-book-page-gutter",
+      "category": "text-and-documents",
+      "title": "Book Page Scan Shadow & Spine-Curve Cleanup",
+      "bestFor": "Smartphone photos of open book pages with dark spine shadows and soft margins.",
+      "prompt": "Even out the dark spine-gutter shadow and sharpen slightly soft printed text across this photographed book page while keeping natural paper tone and exact typography.\n\nStrict constraints:\n- Preserve exact pagination, footnotes, diagrams, and spelling without altering a single character."
+    },
+    {
+      "id": "doc-vintage-map-blueprint",
+      "category": "text-and-documents",
+      "title": "Historical Map, Blueprint & Schematic Detail Recovery",
+      "bestFor": "Low-resolution archival maps, engineering schematics, and patent drawings.",
+      "prompt": "Enhance fine linework, contour hatches, and small place-name labels in this archival map/blueprint while preserving exact cartographic geometry and authentic paper tones.\n\nStrict constraints:\n- Do NOT hallucinate new roads, rename labels, or distort scale bars and technical symbols."
+    }
+  ]
+}
